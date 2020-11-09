@@ -1,0 +1,15 @@
+
+<div class="submission-container">
+    <label class="submission-description-label">Can't remember a song?</label>
+    <input type="text" class="submission-description" [formControl]="description" placeholder="Add your supporting comment..."/>
+    
+    <div class="record-button-container" (click)="recording ? stopRecording() : initiateRecording()">
+        <span>{{ recordBtnText }}</span>&nbsp;<i [ngStyle]="{ 'display': recording ? 'none': 'inherit' }" class="fa fa-microphone"></i>
+    </div>
+    <div class="record-progress-bar" [ngStyle]="{'width': recordingProgress}"></div>
+    <audio #audioPlayer class="record-audio-container" controls="" *ngIf="url">
+        <source [src]="url" type="audio/wav">
+    </audio>
+
+    <div class="submission-button" [ngStyle]="{ 'display': url ? 'inherit': 'none' }">Submit Entry</div>
+</div>

@@ -7,8 +7,6 @@ import com.idkproductions.whatsong.request.EnquiryPostRequest;
 import com.idkproductions.whatsong.type.SortType;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -36,10 +34,10 @@ public class DefaultEnquiryPostService implements EnquiryPostService {
 
     @Override
     public EnquiryPostDto submitPost(EnquiryPostRequest submission) {
-         EnquiryPost post = this.modelMapper.map(submission, EnquiryPost.class);
+        EnquiryPost post = this.modelMapper.map(submission, EnquiryPost.class);
 
-         post = this.enquiryPostRepository.save(post);
+        post = this.enquiryPostRepository.save(post);
 
-         return this.modelMapper.map(post, EnquiryPostDto.class);
+        return this.modelMapper.map(post, EnquiryPostDto.class);
     }
 }

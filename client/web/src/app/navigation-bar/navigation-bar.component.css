@@ -1,0 +1,18 @@
+.ws-navbar-brand {
+    float: left;
+    width: 100%;
+    font-size: 2.0em;
+    font-family: 'Permanent Marker';
+    color: rgb(255 119 0 / 1);
+    background: #333333;
+}
+
+.navbar {
+    background: #333333;
+    border-top: 7px groove #ff7878;
+}
+
+.navbar-filler {
+    display: block;
+    height: 120px;
+}

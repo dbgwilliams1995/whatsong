@@ -1,0 +1,14 @@
+.public-feed-container { 
+    padding: 20px;
+}
+
+.feed-post-container{
+    min-height: 200px;
+    background: #ffffff;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 39px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 39px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 39px -13px rgba(0,0,0,0.75);
+}
